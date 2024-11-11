@@ -3,7 +3,7 @@ import telebot
 from module import check_surname
 
 wikipedia.set_lang('ru')
-bot = telebot.TeleBot('7776305783:AAFgYFrUMRNg32GiUG0MlDmKU86wOjx8mIA')
+bot = telebot.TeleBot('token')
 
 # Запуск бота, приветствие
 @bot.message_handler(commands=['start'])
