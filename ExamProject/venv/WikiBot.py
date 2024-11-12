@@ -10,7 +10,7 @@ bot = telebot.TeleBot('token')
 # Запуск бота, приветствие
 @bot.message_handler(commands=['start'])
 def start(message):
-    send_mess = f'<b>{message.from_user.first_name} {check_surname(message.from_user.last_name)},Добро пожаловать в WikiBot!</b> \nС этим ботом вы можете найти абсолютно обо всём что вас интересует \nЧтобы начать поиск, просто напишите мне'
+    send_mess = f'<b>{message.from_user.first_name} {check_surname(message.from_user.last_name)}, Добро пожаловать в WikiBot!</b> \nС этим ботом вы можете найти абсолютно обо всём что вас интересует \nЧтобы начать поиск, просто напишите мне'
     bot.send_message(message.chat.id, send_mess, parse_mode='html')
 
 
