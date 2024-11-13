@@ -1,7 +1,8 @@
 
 
 def check_surname(surname):
-    if surname != None:
+    if None != surname:
         return surname
     else:
         return ''
+
